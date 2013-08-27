@@ -1,0 +1,26 @@
+{
+  "name": "wrapping-tape",
+  "version": "0.0.1",
+  "description": "Wrap tape tests to add setup and teardown functionality",
+  "main": "wrapping-tape.js",
+  "dependencies": {
+    "tape": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daleharvey/wrapping-tape.git"
+  },
+  "homepage": "https://github.com/daleharvey/wrapping-tape",
+  "keywords": {
+    "testing",
+    "tape",
+    "setup",
+    "teardown"
+  },
+  "author": {
+    "name": "Dale Harvey",
+    "email": "dale@arandomurl.com",
+    "url": "http://arandomurl.com"
+  },
+  "license": "Apache"
+}
