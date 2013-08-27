@@ -7,8 +7,7 @@ module.exports = function(opts) {
 
     if (opts.setup) {
       tape('setup', function(t) {
-        t.plan(0);
-        opts.setup(t.end.bind(this));
+        opts.setup.call(t, t);
       });
     }
 
@@ -16,8 +15,7 @@ module.exports = function(opts) {
 
     if (opts.teardown) {
       tape('teardown', function(t) {
-        t.plan(0);
-        opts.teardown(t.end.bind(this));
+        opts.teardown.call(t, t);
       });
     }
 

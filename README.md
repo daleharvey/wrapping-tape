@@ -2,19 +2,21 @@
 
 Wrap [tape](https://github.com/substack/tape) tests to add setup and teardown functionality
 
+The functions passed into setup and teardown run as normal tape tests, you can call asserts and use `t.end()` to finish them, they can work asynchronously.
+
 ## Example
 
 ```` js
 var tape = require('wrapping-tape');
 
 var test = tape({
-  setup: function(done) {
+  setup: function(t) {
     ... do test setup
-    done();
+    t.end();
   },
-  teardown: function(done) {
+  teardown: function(t) {
     ... do test teardown
-    done();
+    t.end();
   }
 });
 ````
@@ -23,11 +25,13 @@ or
 
 ```` js
 var test = require('wrapping-tape')({
-  setup: function(done) {
+  setup: function(t) {
     ... do test setup
+    t.end();
   },
-  teardown: function(done) {
+  teardown: function(t) {
     ... do test teardown
+    t.end();
   }
 });
 ```
