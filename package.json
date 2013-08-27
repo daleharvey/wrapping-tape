@@ -11,12 +11,12 @@
     "url": "git://github.com/daleharvey/wrapping-tape.git"
   },
   "homepage": "https://github.com/daleharvey/wrapping-tape",
-  "keywords": {
+  "keywords": [
     "testing",
     "tape",
     "setup",
     "teardown"
-  },
+  ],
   "author": {
     "name": "Dale Harvey",
     "email": "dale@arandomurl.com",
