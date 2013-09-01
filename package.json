@@ -1,6 +1,6 @@
 {
   "name": "wrapping-tape",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrap tape tests to add setup and teardown functionality",
   "main": "wrapping-tape.js",
   "dependencies": {
